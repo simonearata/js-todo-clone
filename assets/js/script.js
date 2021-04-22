@@ -26,7 +26,7 @@ $(document).ready(function(){
       var textB = $(this).val().trim();
       var textB = '<li><p>' + textB + '</p><i class="far fa-trash-alt"></i></li>';
       $('.list-items ul').append(textB)
-
+      $(this).val("")
     }
   })
 
