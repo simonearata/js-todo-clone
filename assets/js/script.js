@@ -23,8 +23,9 @@ $(document).ready(function(){
   //aggiungiamo alla lista il testo inserito dall'utente
   $('input').keyup(function(event){
     if(event.which === 13){
-      $(this).val().trim();
-      
+      var textB = $(this).val().trim();
+      var textB = '<li><p>' + textB + '</p><i class="far fa-trash-alt"></i></li>';
+      $('.list-items ul').append(textB)
 
     }
   })
